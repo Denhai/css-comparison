@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../lib/foundation.min.css">
+</head>
+
+<body>
+    <h1>Foundation</h1>
+    <form>
+        <label>First Name
+            <input type="text" placeholder="First Name">
+        </label>
+        <label>Disabled input
+            <input disabled type="text" placeholder="First Name">
+        </label>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">I agree</label>
+
+        <label>Colour
+            <select>
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Green</option>
+                <option>Blue</option>
+            </select>
+        </label>
+
+        <fieldset>
+            <legend>Fruit</legend>
+            <input type="radio" name="fruit" id="apple" required><label for="apple">Apples</label>
+            <input type="radio" name="fruit" id="orange"><label for="orange">Oranges</label>
+            <input type="radio" name="fruit" id="pear"><label for="pear">Pears</label>
+        </fieldset>
+
+        <div class="input-group">
+            <span class="input-group-label">$</span>
+            <input class="input-group-field" type="url">
+            <a class="input-group-button button">Submit</a>
+        </div>
+    </form>
+</body>

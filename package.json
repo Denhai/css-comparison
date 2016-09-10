@@ -1,0 +1,19 @@
+{
+  "name": "css-comparison",
+  "description": "A side by side comparison of the most popular CSS frameworks.",
+  "author": {
+      "name": "Hayden Bartlett"
+  },
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "browser-sync start -s . -f ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.15.0"
+  }
+}
