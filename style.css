@@ -2,20 +2,22 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    min-height: 100%;
-    min-width: 100%;
+html {
+    height: 100%;
+    width: 100%;
     font-family: Helvetica, Arial, 'Trebuchet MS', sans-serif;
     margin: 0;
 }
 
 body {
-    display: inline-block;
+    float: left;
+    min-width: 100%;
+    margin: 0;
+    padding-top: 4em;
 }
 
 .columns {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
@@ -31,9 +33,13 @@ body {
 .tabs {
     border-bottom: 2px solid rgba(34, 36, 38, .15);
     display: flex;
-    margin: 0.5rem 0;
     min-height: 2em;
     font-weight: 400;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    background-color: white;
 }
 
 .tabs a {
@@ -48,6 +54,7 @@ body {
     line-height: 1;
     text-decoration: none;
     flex: 0 0 auto;
+    color: rgba(0, 0, 0, .87);
 }
 
 .tabs a:active {
@@ -61,11 +68,3 @@ body {
     font-weight: 700;
     color: rgba(0, 0, 0, .95);
 }
-
-/*.tabs:after {
-    content: '';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}*/

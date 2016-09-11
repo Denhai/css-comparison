@@ -1,16 +1,16 @@
 {
   "name": "css-comparison",
-  "description": "A side by side comparison of the most popular CSS frameworks.",
+  "description": "A side by side comparison of CSS frameworks.",
   "author": {
       "name": "Hayden Bartlett"
   },
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "github.com/Denhai/css-comparison"
   },
   "scripts": {
-    "start": "browser-sync start -s . -f ."
+    "start": "browser-sync start -s . --files='**/*.html, **/*.css, **/*.js'"
   },
   "dependencies": {},
   "devDependencies": {

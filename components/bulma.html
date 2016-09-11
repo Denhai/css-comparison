@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../lib/bulma.css">
+    <style>
+        html {
+            overflow: hidden;
+        }
+        
+        .section {
+            padding: 5px 2px;
+        }
+    </style>
+</head>
+
+<body class="section">
+    <h1 class="title">Bulma</h1>
+
+    <p class="control has-addons">
+        <a class="button">
+            <span>Left</span>
+        </a>
+        <a class="button">
+            <span>Center</span>
+        </a>
+        <a class="button">
+            <span>Right</span>
+        </a>
+    </p>
+
+    <p class="control has-addons">
+        <a class="button"> $ </a>
+        <input class="input" type="text" placeholder="Amount of money">
+        <a class="button"> .00 </a>
+    </p>
+
+    <p class="control has-addons">
+        <input class="input" type="text" placeholder="Search...">
+        <a class="button is-info"> Search </a>
+    </p>
+
+    <p class="control is-loading">
+        <input class="input" type="text" placeholder="Search...">
+    </p>
+    <a class="button is-loading">Loading</a>
+    <a class="button is-primary is-loading">Loading</a>
+
+    <div class="tabs">
+        <ul>
+            <li class="is-active"><a>First</a></li>
+            <li><a>Second</a></li>
+            <li><a>Third</a></li>
+        </ul>
+    </div>
+    <div class="tabs is-boxed">
+        <ul>
+            <li class="is-active"><a>First</a></li>
+            <li><a>Second</a></li>
+            <li><a>Third</a></li>
+        </ul>
+    </div>
+    <div class="tabs is-toggle">
+        <ul>
+            <li class="is-active"><a>First</a></li>
+            <li><a>Second</a></li>
+            <li><a>Third</a></li>
+        </ul>
+    </div>
+
+    <nav class="pagination">
+        <a class="button">Previous</a>
+        <a class="button">Next page</a>
+        <ul>
+            <li>
+                <a class="button">1</a>
+            </li>
+            <li>
+                <span>...</span>
+            </li>
+            <li>
+                <a class="button">45</a>
+            </li>
+            <li>
+                <a class="button is-primary">46</a>
+            </li>
+            <li>
+                <a class="button">47</a>
+            </li>
+            <li>
+                <span>...</span>
+            </li>
+            <li>
+                <a class="button">86</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <span class="tag"> Tag label </span>
+    <span class="tag is-dark">Dark</span>
+    <span class="tag is-primary">Primary</span>
+    <span class="tag is-info">Info</span>
+    <span class="tag is-success">Success</span>
+    <span class="tag is-warning">Warning</span>
+    <span class="tag is-danger">Danger</span>
+    <br><br>
+
+    <progress class="progress" value="15" max="100">15%</progress>
+    <progress class="progress is-success" value="60" max="100">60%</progress>
+
+    <button class="button modal-open">Modal</button>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-container">
+            <div class="modal-content">
+                <p>Any elements you want...</p>
+                <button class="button is-primary">Okay</button>
+                <button class="button is-danger">Close</button>
+            </div>
+        </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <button class="button modal-open">Modal card</button>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete"></button>
+            </header>
+            <section class="modal-card-body">
+                Modal card body
+            </section>
+            <footer class="modal-card-foot">
+                <a class="button is-primary">Save changes</a>
+                <a class="button">Cancel</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../lib/jquery.min.js"></script>
+    <script>
+        $('.tabs li').click(function() {
+            $(this).addClass('is-active').siblings().removeClass('is-active')
+        })
+        $('.tag .delete').click(function() {
+            $(this).parent('.tag').remove()
+        })
+        $('.modal-open').click(function() {
+            $(this).next('.modal').toggleClass('is-active')
+        })
+        $('.modal button, .modal a').click(function() {
+            $(this).parents('.modal').toggleClass('is-active')
+        })
+    </script>
+
+</body>
