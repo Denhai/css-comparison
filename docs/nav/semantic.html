@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="../lib/semantic.min.css">
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../lib/semantic.min.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <div class="ui stackable menu">
+        <div class="header item">Semantic UI</div>
+        <a class="active item">Link</a>
+        <a class="item">Link</a>
+        <div class="ui dropdown item" tabindex="0">
+            Dropdown
+            <i class="dropdown icon"></i>
+            <div class="menu transition hidden" tabindex="-1">
+                <div class="item">Action</div>
+                <div class="divider"></div>
+                <div class="item">Separated link</div>
+            </div>
+        </div>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui action left input">
+                    <input type="text" placeholder="Search">
+                    <button class="ui button">Submit</button>
+                </div>
+            </div>
+            <a class="item">Link</a>
+        </div>
+    </div>
+    <script>
+        $('.ui.checkbox').checkbox()
+        $('.ui.dropdown').dropdown()
+    </script>
+</body>

@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="../lib/semantic.min.css">
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../lib/semantic.min.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <h1>Semantic UI</h1>
+    <form class="ui form">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" name="first-name" placeholder="First Name">
+        </div>
+        <div class="field">
+            <input disabled type="text" name="first-name" placeholder="Disabled input">
+        </div>
+        <div class="field">
+            <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree</label>
+            </div>
+        </div>
+        <div class="field">
+            <label>Colour</label>
+            <select class="ui fluid dropdown">
+                <option>Red</option>
+                <option>Yellow</option>
+                <option>Green</option>
+                <option>Blue</option>
+            </select>
+        </div>
+
+        <div class="inline fields">
+            <label for="fruit">Fruit</label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                    <label>Apples</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" tabindex="0" class="hidden">
+                    <label>Oranges</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="fruit" tabindex="0" class="hidden">
+                    <label>Pears</label>
+                </div>
+            </div>
+        </div>
+        <div class="ui fluid right labeled action input">
+            <div class="ui label">$</div>
+            <input type="text" placeholder="Amount">
+            <a class="ui button blue">Submit</a>
+        </div>
+
+    </form>
+
+    <script>
+        $('.ui.checkbox').checkbox()
+    </script>
+</body>
