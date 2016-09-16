@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../lib/semantic.min.css">
+    <link rel="stylesheet" href="../styles/semantic.css">
     <style>
         body {
             overflow: hidden;
@@ -137,94 +137,15 @@
     <a class="ui teal tag label">Featured</a>
     <br><br>
     <div class="ui compact menu">
-
-        <a class="item"> Messages 
-      <div class="floating ui red label">22</div>
-    </a>
+        <a class="item"> Messages <div class="floating ui red label">22</div> </a>
     </div>
 
-
-    <div class="ui indicating progress" data-value="45" data-total="100">
-        <div class="bar"></div>
-        <div class="label">Funding</div>
+    <div class="ui indicating progress active" data-value="45" data-total="100" data-percent="45">
+        <div class="bar" style="transition-duration: 200ms; width: 45%;"></div>
+        <div class="label">45 of 200 done</div>
     </div>
+    <br>
 
-    <div class="ui modal" id="modal1">
-        <div class="header">
-            Modal header
-        </div>
-        <div class="content">
-            <div class="description">
-                <div class="ui header">Header</div>
-                <p>Paragraph of text.</p>
-            </div>
-        </div>
-        <div class="actions">
-            <div class="ui black deny button">
-                No
-            </div>
-            <div class="ui positive button">
-                Yes
-            </div>
-        </div>
-    </div>
-
-    <div style="display:table;">
-    <span style="display: table-cell; vertical-align: middle;">Show Semantic modal: </span>
-    <div class="ui buttons">
-        Show Semantic modal
-        <button class="ui button" id="modalExampleButton1">1</button>
-        <div class="or"></div>
-        <button class="ui button" id="modalExampleButton2">2</button>
-    </div>
-    </div>
-
-    <div class="ui basic modal" id="modal2">
-        <div class="header">
-            Archive Old Messages
-        </div>
-        <div class="content">
-            <div class="description">
-                <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
-            </div>
-        </div>
-        <div class="actions">
-            <div class="two fluid ui inverted buttons">
-                <div class="ui cancel red basic inverted button">
-                    No
-                </div>
-                <div class="ui ok green basic inverted button">
-                    Yes
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="ui left floated button" data-tooltip="Tooltip to the right." data-position="right center">
-        Hover
-    </div>
-    <div class="ui right floated button" data-inverted data-tooltip="Tooltip to the left." data-position="left center">
-        Hover
-    </div><br><br><br>
-
-    <script src="../lib/jquery-2.2.3.min.js"></script>
-    <script src="../lib/semantic.min.js"></script>
-    <script>
-        // $('.ui.checkbox').checkbox()
-        $('.ui.dropdown').dropdown()
-        $('.menu .item').tab()
-        $('.progress').progress({
-            duration: 200,
-            total: 200,
-            text: {
-                active: '{value} of {total} done'
-            }
-        })
-        $('#modalExampleButton1').click(function() {
-            $('#modal1').modal('show');
-        })
-        $('#modalExampleButton2').click(function() {
-            $('#modal2').modal('show');
-        })
-    </script>
+    <div class="ui button" data-tooltip="Add users to your feed" data-position="right center"> CSS tooltip </div>
+    <br><br>
 </body>

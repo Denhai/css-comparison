@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="../styles/foundation.css">
+</head>
+
+<body>
+    <p><a class="button" data-open="exampleModal1">Show Foundation modal</a></p>
+    <div class="reveal" id="exampleModal1" data-reveal>
+        <h1>Header</h1>
+        <p class="lead">Lead.</p>
+        <p>Note that this modal expands to fullscreen for devices with low width.</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../lib/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>

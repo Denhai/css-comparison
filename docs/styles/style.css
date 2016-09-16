@@ -63,3 +63,6 @@ body {
   border-color: #1B1C1D;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.95); }
+
+h3 + ul {
+  margin-bottom: 0; }

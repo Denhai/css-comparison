@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="../lib/foundation.min.css">
+    <link rel="stylesheet" href="../styles/foundation.css">
 </head>
 
 <body>
@@ -68,21 +68,13 @@
         </div>
     </div>
 
-    <p><a class="button" data-open="exampleModal1">Show Foundation modal</a></p>
-    <div class="reveal" id="exampleModal1" data-reveal>
-        <h1>Header</h1>
-        <p class="lead">Lead.</p>
-        <p>Note that this modal expands to fullscreen for devices with low width.</p>
-        <button class="close-button" data-close aria-label="Close reveal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+    <div style="position: absolute; width: 100%;">
+        <div class="tooltip top" style="display: block; opacity: 1; top: 0; left: 0;">A tooltip</div>
+        <div class="tooltip right" style="display: block; opacity: 1; top: 0; left: 7em;">A tooltip</div>
     </div>
+        <!--<span style="position: absolute; width: 6em;">
+        <div class="tooltip right" style="display: block; opacity: 1; top: 0; left: 0;">A tooltip</div>
+    </span>-->
 
-    <span data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover='false' tabindex=1 title="Tooltip text.">Hover for tooltip</span>
 
-    <script src="../lib/jquery-2.2.3.min.js"></script>
-    <script src="../lib/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
 </body>
