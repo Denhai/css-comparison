@@ -1,1 +1,14 @@
-@import 'node_modules/semantic-ui-css/semantic'
+@import 'node_modules/semantic-ui-css/semantic';
+
+body {
+    padding: 1em;
+    min-width: 300px;
+}
+
+.ui.icon.input.loading {
+    width: 180px;
+}
+
+.ui.selection.dropdown {
+    min-width: 12em;
+}

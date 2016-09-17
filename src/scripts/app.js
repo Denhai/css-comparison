@@ -9,6 +9,10 @@ $(function () {
             tabs.css({ 'opacity': opacity })
         lastOpacity = opacity
     });
+    $('a', tabs).click(function() {
+        $('a', tabs).removeClass('active')
+        $(this).addClass('active')
+    })
 
     function resize() {
         this.style.height = this.contentWindow.document.body.scrollHeight + 5 + 'px'

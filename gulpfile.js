@@ -44,6 +44,7 @@ gulp.task('watch', ['scripts', 'styles', 'public', 'html'], function () {
 
 gulp.task('styles', function () {
     gulp.src(['src/**/*.scss'])
+        .pipe(changed('docs'))
         .pipe(sass())
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('docs'))

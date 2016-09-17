@@ -1,7 +1,7 @@
 // The foundation javascript has dependencies on the css
 // For media queries .foundation-mq is applied to a <meta> tag, which is read by the Foundation JavaScript: see _globa.scss
 
-@import 'node_modules/foundation-sites/dist/foundation'
+@import 'node_modules/foundation-sites/dist/foundation';
 
 // @import 'node_modules/foundation-sites/scss/foundation';
 // @include foundation-global-styles;
@@ -14,4 +14,16 @@
 // @include foundation-top-bar;
 // @include foundation-menu;
 // @include foundation-menu-icon;
-// //@include foundation-everything
+// //@include foundation-everything;
+
+$pad: 1em;
+
+body {
+    padding: 0 $pad $pad;
+}
+
+.tooltip-container {
+    position: absolute;
+    left: $pad;
+    right: $pad;
+}

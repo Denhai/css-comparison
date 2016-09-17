@@ -1,1 +1,11 @@
-@import 'node_modules/bootstrap/dist/css/bootstrap'
+@import 'node_modules/bootstrap/dist/css/bootstrap';
+
+$padding: 1em;
+
+body {
+    padding: $padding;
+}
+
+.popover.fade.top.in {
+    left: $padding;
+}

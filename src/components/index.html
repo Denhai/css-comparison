@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    {{> head }}
+    <title>Components - {{ data.title }}</title>
+</head>
+
+<body>
+    {{> navigation components=true }}
+
+    <div class="columns">
+        <div class="column">
+            <iframe src="bootstrap.html" frameborder="0"></iframe>
+        </div>
+        <div class="column">
+            <iframe src="semantic.html" frameborder="0"></iframe>
+        </div>
+        <div class="column">
+            <iframe src="foundation.html" frameborder="0"></iframe>
+        </div>
+        <div class="column">
+            <iframe src="bulma.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

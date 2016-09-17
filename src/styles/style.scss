@@ -5,7 +5,6 @@
 html {
     height: 100%;
     width: 100%;
-    font-family: Helvetica, Arial, 'Trebuchet MS', sans-serif;
     margin: 0;
 }
 
@@ -14,6 +13,8 @@ body {
     min-width: 100%;
     margin: 0;
     padding-top: 4em;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: rgba(0, 0, 0, .87);
 }
 
 .columns {
@@ -23,32 +24,26 @@ body {
 
 .column {
     display: block;
-    margin-left: 1em;
 }
 
-.column:last-child {
-    padding-right: 1em;
+iframe {
+    width: 320px;
 }
 
 .tabs {
-    border-bottom: 2px solid rgba(34, 36, 38, .15);
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
     display: flex;
     min-height: 2em;
-    font-weight: 400;
+    font-weight: 300;
     position: fixed;
-    left:0;
-    right:0;
-    top:0;
+    left: 0;
+    right: 0;
+    top: 0;
     background-color: white;
 }
 
 .tabs a {
-    border-bottom-color: transparent;
-    border-bottom-style: solid;
-    align-self: flex-end;
-    margin: 0 0 -2px;
     padding: 1em;
-    border-bottom-width: 2px;
     position: relative;
     vertical-align: middle;
     line-height: 1;
@@ -57,18 +52,41 @@ body {
     color: rgba(0, 0, 0, .87);
 }
 
-.tabs a:active {
-    background-color: transparent;
-    border-color: rgba(34, 36, 38, .15);
-    color: rgba(0, 0, 0, .95);
+$primary: rgba(255, 0, 149, 1);
+$hover: rgba(0, 0, 0, 1);
+
+.tabs a:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid $hover;
+    color: $hover;
 }
 
 .tabs a.active {
-    border-color: #1B1C1D;
-    font-weight: 700;
-    color: rgba(0, 0, 0, .95);
+    margin-bottom: -1px;
+    border-bottom: 1px solid $primary;
+    // font-weight: 400;
+    color: $primary;
 }
 
-h3 + ul {
-    margin-bottom: 0;
+.message {
+    width: 400px;
+    box-shadow: 0px 0px 0px 1px transparentize($primary, 0.7);
+    color: transparentize($primary, 0.1);
+    position: relative;
+    min-height: 1em;
+    margin: 1em 0em;
+    background: transparentize($primary, 0.94);
+    padding: 1em 1.5em;
+    line-height: 1.4em;
+    border-radius: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.container {
+    padding: 0 2em;
+    margin: 0 auto;
 }

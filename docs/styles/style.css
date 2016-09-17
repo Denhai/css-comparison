@@ -4,14 +4,15 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: Helvetica, Arial, 'Trebuchet MS', sans-serif;
   margin: 0; }
 
 body {
   float: left;
   min-width: 100%;
   margin: 0;
-  padding-top: 4em; }
+  padding-top: 4em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.87); }
 
 .columns {
   display: -ms-inline-flexbox;
@@ -20,18 +21,17 @@ body {
       flex-direction: row; }
 
 .column {
-  display: block;
-  margin-left: 1em; }
+  display: block; }
 
-.column:last-child {
-  padding-right: 1em; }
+iframe {
+  width: 320px; }
 
 .tabs {
-  border-bottom: 2px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   display: -ms-flexbox;
   display: flex;
   min-height: 2em;
-  font-weight: 400;
+  font-weight: 300;
   position: fixed;
   left: 0;
   right: 0;
@@ -39,13 +39,7 @@ body {
   background-color: white; }
 
 .tabs a {
-  border-bottom-color: transparent;
-  border-bottom-style: solid;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin: 0 0 -2px;
   padding: 1em;
-  border-bottom-width: 2px;
   position: relative;
   vertical-align: middle;
   line-height: 1;
@@ -54,15 +48,32 @@ body {
       flex: 0 0 auto;
   color: rgba(0, 0, 0, 0.87); }
 
-.tabs a:active {
-  background-color: transparent;
-  border-color: rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.95); }
+.tabs a:hover {
+  margin-bottom: -1px;
+  border-bottom: 1px solid black;
+  color: black; }
 
 .tabs a.active {
-  border-color: #1B1C1D;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.95); }
+  margin-bottom: -1px;
+  border-bottom: 1px solid #ff0095;
+  color: #ff0095; }
 
-h3 + ul {
-  margin-bottom: 0; }
+.message {
+  width: 400px;
+  box-shadow: 0px 0px 0px 1px rgba(255, 0, 149, 0.3);
+  color: rgba(255, 0, 149, 0.9);
+  position: relative;
+  min-height: 1em;
+  margin: 1em 0em;
+  background: rgba(255, 0, 149, 0.06);
+  padding: 1em 1.5em;
+  line-height: 1.4em;
+  border-radius: 5px; }
+
+ul {
+  padding: 0;
+  list-style-position: inside; }
+
+.container {
+  padding: 0 2em;
+  margin: 0 auto; }
