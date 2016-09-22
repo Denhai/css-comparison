@@ -30,7 +30,7 @@ iframe {
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   display: -ms-flexbox;
   display: flex;
-  min-height: 2em;
+  min-height: 3em;
   font-weight: 300;
   position: fixed;
   left: 0;
@@ -39,24 +39,36 @@ iframe {
   background-color: white; }
 
 .tabs a {
-  padding: 1em;
-  position: relative;
-  vertical-align: middle;
-  line-height: 1;
+  padding: 0 1em;
   text-decoration: none;
-  -ms-flex: 0 0 auto;
-      flex: 0 0 auto;
-  color: rgba(0, 0, 0, 0.87); }
+  color: rgba(0, 0, 0, 0.87);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .tabs a:hover {
   margin-bottom: -1px;
   border-bottom: 1px solid black;
   color: black; }
+  .tabs a:hover svg {
+    fill: black; }
 
 .tabs a.active {
   margin-bottom: -1px;
   border-bottom: 1px solid #ff0095;
   color: #ff0095; }
+  .tabs a.active svg {
+    fill: #ff0095; }
+
+.tabs .github {
+  margin-left: auto; }
+  .tabs .github svg {
+    width: 22px;
+    fill: black;
+    margin-right: 0.5em; }
 
 .message {
   width: 400px;
@@ -71,9 +83,8 @@ iframe {
   border-radius: 5px; }
 
 ul {
-  padding: 0;
-  list-style-position: inside; }
+  padding: 0; }
 
 .container {
   padding: 0 2em;
-  margin: 0 auto; }
+  width: 100%; }

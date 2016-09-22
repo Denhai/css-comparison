@@ -33,7 +33,7 @@ iframe {
 .tabs {
     border-bottom: 1px solid rgba(34, 36, 38, .15);
     display: flex;
-    min-height: 2em;
+    min-height: 3em;
     font-weight: 300;
     position: fixed;
     left: 0;
@@ -43,13 +43,12 @@ iframe {
 }
 
 .tabs a {
-    padding: 1em;
-    position: relative;
-    vertical-align: middle;
-    line-height: 1;
+    padding: 0 1em;
     text-decoration: none;
-    flex: 0 0 auto;
     color: rgba(0, 0, 0, .87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 $primary: rgba(255, 0, 149, 1);
@@ -59,6 +58,9 @@ $hover: rgba(0, 0, 0, 1);
     margin-bottom: -1px;
     border-bottom: 1px solid $hover;
     color: $hover;
+    svg {
+        fill: $hover;
+    }
 }
 
 .tabs a.active {
@@ -66,6 +68,18 @@ $hover: rgba(0, 0, 0, 1);
     border-bottom: 1px solid $primary;
     // font-weight: 400;
     color: $primary;
+    svg {
+        fill: $primary;
+    }
+}
+
+.tabs .github {
+    margin-left: auto;
+    svg {
+        width: 22px;
+        fill: black;
+        margin-right: 0.5em;
+    }
 }
 
 .message {
@@ -83,10 +97,9 @@ $hover: rgba(0, 0, 0, 1);
 
 ul {
     padding: 0;
-    list-style-position: inside;
 }
 
 .container {
     padding: 0 2em;
-    margin: 0 auto;
+    width: 100%;
 }
