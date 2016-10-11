@@ -66,7 +66,7 @@ gulp.task('scripts', function () {
 })
 
 gulp.task('public', function () {
-    return gulp.src('public/**/*')
+    return gulp.src(['public/**/*'])
         .pipe(changed('docs'))
         .pipe(gulp.dest('docs'))
         .pipe(bs.reload({ stream: true }))
@@ -95,10 +95,10 @@ gulp.task('html', function () {
 
 gulp.task('uncss', ['styles', 'html'], function () {
     var libs = [
-        {name: 'bootstrap', ignore: [/open/, /collapsing/]}, 
-        {name: 'semantic', ignore: [/transition/]}, 
-        {name: 'foundation', ignore: [/foundation\-mq/, /top\-bar/, /title\-bar/ , /menu/]},
-        {name: 'bulma', ignore: []}
+        { name: 'bootstrap', ignore: [/open/, /collapsing/] },
+        { name: 'semantic', ignore: [/transition/] },
+        { name: 'foundation', ignore: [/foundation\-mq/, /top\-bar/, /title\-bar/, /menu/] },
+        { name: 'bulma', ignore: [] }
     ]
     var tasks = []
     tasks = libs.map(function (library) {

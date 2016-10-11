@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../styles/materialize.css">
+    <style>
+        body {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#">three</a></li>
+        <li><a href="#">four</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Materialize</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" style="font-size: 1.5em; padding: 0 1em;">MENU</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">One</a></li>
+                <li class="active"><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown1">Dropdown</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#">One</a></li>
+                <li class="active"><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown1">Dropdown</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../materialize.js"></script>
+    <script>
+        $(function() {
+            $(".button-collapse").sideNav();
+        })
+    </script>
+</body>

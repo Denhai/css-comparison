@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="../styles/materialize.css">
+    <style>
+        /* So that the window doesn't jump to the left when the buttons are clicked.
+        Caused by this css:
+            position: absolute;
+            left: -9999px;
+         */
+        [type="radio"], [type="checkbox"] {
+            left: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Materialize</h1>
+    <label>First Name</label>
+    <input type="text" name="first-name" placeholder="First Name">
+    <input disabled type="text" name="first-name" placeholder="Disabled input">
+    <p>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">I agree</label>
+    </p>
+    <p>
+        <input type="checkbox" id="checkbox2" class="filled-in">
+        <label for="checkbox2">I agree</label>
+    </p>
+    <div class="input-field">
+        <select>
+            <option value="1" selected>Red</option>
+            <option value="2">Yellow</option>
+            <option value="3">Green</option>
+            <option value="4">Blue</option>
+        </select>
+        <label>Colour</label>
+    </div>
+
+    Fruit
+    <input type="radio" name="fruit1" id="apple" checked/>
+    <label for="apple">Apples</label>
+    <input type="radio" name="fruit1" id="orange" />
+    <label for="orange">Oranges</label>
+    <input type="radio" name="fruit1" id="pear" />
+    <label for="pear">Pears</label>
+
+
+    <div class="input-field row">
+        <span class="prefix">$</span>
+        <input type="text" placeholder="Amount">
+        <a class="waves-effect waves-light btn blue">Submit</a>
+    </div>
+
+
+    <script src="../lib/jquery-2.2.3.min.js"></script>
+    <script src="../scripts/materialize.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+        $(document).bind('focus', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
