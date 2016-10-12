@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp clean && gulp prod"
+    "build": "gulp clean && gulp build"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",

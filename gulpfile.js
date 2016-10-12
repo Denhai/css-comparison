@@ -98,7 +98,8 @@ gulp.task('uncss', ['styles', 'html'], function () {
         { name: 'bootstrap', ignore: [/open/, /collapsing/] },
         { name: 'semantic', ignore: [/transition/] },
         { name: 'foundation', ignore: [/foundation\-mq/, /top\-bar/, /title\-bar/, /menu/] },
-        { name: 'bulma', ignore: [] }
+        { name: 'bulma', ignore: [] },
+        { name: 'materialize', ignore: [/select\-wrapper/, /select\-dropdown/, /dropdown\-content/] },
     ]
     var tasks = []
     tasks = libs.map(function (library) {
@@ -117,4 +118,4 @@ gulp.task('clean', function () {
     return del('docs/**/*')
 })
 
-gulp.task('prod', ['uncss', 'scripts', 'public'])
+gulp.task('build', ['uncss', 'scripts', 'public'])

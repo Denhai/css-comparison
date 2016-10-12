@@ -1,5 +1,10 @@
 @import 'node_modules/bulma/css/bulma';
 
+html {
+    overflow: hidden;
+    background-color: white;
+}
+
 body {
     padding: 1em;
 }

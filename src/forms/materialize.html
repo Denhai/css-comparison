@@ -17,14 +17,16 @@
     <label>First Name</label>
     <input type="text" name="first-name" placeholder="First Name">
     <input disabled type="text" name="first-name" placeholder="Disabled input">
-    <p>
-        <input type="checkbox" id="checkbox1">
-        <label for="checkbox1">I agree</label>
-    </p>
-    <p>
-        <input type="checkbox" id="checkbox2" class="filled-in">
-        <label for="checkbox2">I agree</label>
-    </p>
+    <div class="row">
+        <div class="col s6">
+            <input type="checkbox" id="checkbox1" checked>
+            <label for="checkbox1">I agree</label>
+        </div>
+        <div class="col s6">
+            <input type="checkbox" id="checkbox2" class="filled-in" checked>
+            <label for="checkbox2">I agree</label>
+        </div>
+    </div>
     <div class="input-field">
         <select>
             <option value="1" selected>Red</option>
@@ -42,6 +44,13 @@
     <label for="orange">Oranges</label>
     <input type="radio" name="fruit1" id="pear" />
     <label for="pear">Pears</label>
+    <br>
+    <input class="with-gap" type="radio" name="fruit2" id="apple1" checked/>
+    <label for="apple1">Apples</label>
+    <input class="with-gap" type="radio" name="fruit2" id="orange1" />
+    <label for="orange1">Oranges</label>
+    <input class="with-gap" type="radio" name="fruit2" id="pear1" />
+    <label for="pear1">Pears</label>
 
 
     <div class="input-field row">

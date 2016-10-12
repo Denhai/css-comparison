@@ -9,7 +9,7 @@ $(function () {
             tabs.css({ 'opacity': opacity })
         lastOpacity = opacity
     });
-    $('a', tabs).click(function() {
+    $('a:not(.github)', tabs).click(function() {
         $('a', tabs).removeClass('active')
         $(this).addClass('active')
     })
